@@ -1,0 +1,80 @@
+//
+//
+// Colors
+$black: #000;
+$white: #fff;
+
+$gray: #444;
+$gray-light: #f7f7f7;
+
+$brand-black: #222;
+$brand-primary: #309DC6;
+$brand-primary-dark: darken($brand-primary, 7%);
+
+$color-base: $brand-black;
+$color-heading: $brand-black;
+
+//
+//
+// Typography
+$font-family-regular: 'Roboto', sans-serif;
+$font-family-heading: 'Lato', sans-serif;
+
+$font-size-base: 1rem;
+$font-size-lead: rem(22);
+$font-size-large: rem(18);
+$font-size-small: rem(14);
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$line-height-base: 1.5;
+$line-height-heading: 1.2;
+
+//
+//
+// Buttons
+$btn-primary: $brand-primary;
+$btn-dark: $brand-black;
+$btn-light: $gray-light;
+
+//
+//
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+//
+//
+// Container / Grid
+$container-width: 1140px;
+$bg-dark: $brand-black;
+$bg-light: $gray-light;
+
+$gutter: 32px;
+
+//
+//
+// Cards
+$border-radius: 8px;
+$box-shadow: 0 8px 12px rgba(37, 38, 45, 0.08);
+
+//
+//
+// Transitions
+$hover-transition: 0.2s ease-in-out;
+
+//
+//
+// Navigation
+$nav-breakpoint: 'lg';
+$nav-height-mobile: 70px;
+
+// Z-Indexes
+$z-index-cookie-popup: 5;
+$z-index-modal: 4;
+$z-index-modal-overlay: 3;
+$z-index-nav: 2;

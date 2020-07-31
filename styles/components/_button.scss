@@ -1,0 +1,62 @@
+.button {
+  align-items: center;
+  background-color: $brand-black;
+  border: none;
+  border-radius: 20px;
+  color: $white;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: $font-family-regular;
+  font-size: $font-size-base;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 1.5;
+  padding: rem(8) rem(18);
+  text-align: center;
+  transition: background-color $hover-transition, box-shadow $hover-transition;
+  user-select: none;
+  vertical-align: middle;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+    text-decoration: none;
+  }
+
+  &.is-primary {
+    background-color: $brand-primary;
+    color: $white;
+    font-weight: $font-weight-medium;
+
+    &:hover {
+      background-color: hover-color($brand-primary);
+      text-decoration: none;
+    }
+  }
+
+  &.is-light {
+    background-color: $gray-light;
+    color: $brand-black;
+
+    &:hover {
+      background-color: darken($gray-light, 3%);
+      text-decoration: none;
+    }
+  }
+
+  &.is-large {
+    border-radius: 22px;
+    font-size: rem(18);
+  }
+
+  &.is-wide {
+    padding-left: $gutter;
+    padding-right: $gutter;
+  }
+
+  .icon {
+    height: 20px;
+    margin-left: 6px;
+    width: 20px;
+  }
+}
