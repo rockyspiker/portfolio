@@ -4,7 +4,6 @@ import { useRouter } from 'next/router'
 import Button from './button'
 import Hamburger from './hamburger'
 import Chevron from './icons/chevron'
-import Logo from './icons/logo-extras'
 
 const Header = () => {
   const [activeMenu, setActiveMenu] = useState(false)
@@ -18,14 +17,6 @@ const Header = () => {
   return (
     <div className={`header ${activeMenu ? 'is-active' : ''}`}>
       <div className="container">
-        <div className="logo">
-          <Link href="/">
-            <a>
-              <Logo />
-            </a>
-          </Link>
-        </div>
-
         <button
           className="menu-toggle"
           type="button"
@@ -49,7 +40,7 @@ const Header = () => {
               hrefs={['/get-started']}
             >
               <Link href="/get-started">
-                <a>Get Started</a>
+                <a>My Work</a>
               </Link>
             </NavItem>
             <NavItem
@@ -62,42 +53,19 @@ const Header = () => {
               </span>
               <ul className="sub-nav">
                 <li>
-                  <Link href="/policies">
-                    <a>Policies and Procedures</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/photo-policy">
-                    <a>Photo Updates</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/resources/CC-payment-auth-Rev2020April.pdf">
+                  <Link href="/resume.pdf">
                     <a target="_blank" rel="noopener noreferrer">
-                      Electronic Payment Authorization
+                      Resume
                     </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/studios">
-                    <a>Studios</a>
                   </Link>
                 </li>
               </ul>
             </NavItem>
             <NavItem className="nav-item link-contact" hrefs={['/contact']}>
               <Link href="/contact">
-                <a>Contact Us</a>
+                <a>Contact Me</a>
               </Link>
             </NavItem>
-            <li className="link-login">
-              <Link href="/login">
-                <a>Login</a>
-              </Link>
-            </li>
-            <li className="login-button">
-              <Button href="#">Login</Button>
-            </li>
           </ul>
         </nav>
       </div>

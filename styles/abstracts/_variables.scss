@@ -8,17 +8,20 @@ $gray: #444;
 $gray-light: #f7f7f7;
 
 $brand-black: #222;
-$brand-primary: #309DC6;
+$brand-primary: #ec3e3e;
 $brand-primary-dark: darken($brand-primary, 7%);
 
 $color-base: $brand-black;
 $color-heading: $brand-black;
 
+$background-primary: $white;
+$background-accent: $brand-primary;
+
 //
 //
 // Typography
-$font-family-regular: 'Roboto', sans-serif;
-$font-family-heading: 'Lato', sans-serif;
+$font-family-regular: 'Mukta', sans-serif;
+$font-family-heading: 'Mukta', sans-serif;
 
 $font-size-base: 1rem;
 $font-size-lead: rem(22);
