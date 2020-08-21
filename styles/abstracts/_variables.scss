@@ -8,7 +8,7 @@ $gray: #444;
 $gray-light: #f7f7f7;
 
 $brand-black: #222;
-$brand-primary: #ec3e3e;
+$brand-primary: #5694f0;
 $brand-primary-dark: darken($brand-primary, 7%);
 
 $color-base: $brand-black;
@@ -73,7 +73,7 @@ $hover-transition: 0.2s ease-in-out;
 //
 //
 // Navigation
-$nav-breakpoint: 'lg';
+$nav-breakpoint: 'sm';
 $nav-height-mobile: 70px;
 
 // Z-Indexes

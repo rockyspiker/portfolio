@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import Button from './button'
 import Hamburger from './hamburger'
 import Chevron from './icons/chevron'
+import Logo from './icons/logo-rocky'
 
 const Header = () => {
   const [activeMenu, setActiveMenu] = useState(false)
@@ -27,6 +28,12 @@ const Header = () => {
           <Hamburger isActive={activeMenu} />
         </button>
 
+        <Link href="/">
+          <a>
+            <Logo />
+          </a>
+        </Link>
+
         <nav>
           <span className="category main-category">Main</span>
           <ul className="main-nav">
@@ -35,17 +42,14 @@ const Header = () => {
                 <a>Home</a>
               </Link>
             </NavItem>
-            <NavItem
-              className="nav-item link-get-started"
-              hrefs={['/get-started']}
-            >
-              <Link href="/get-started">
+            <NavItem className="nav-item link-my-work" hrefs={['/my-work']}>
+              <Link href="/my-work">
                 <a>My Work</a>
               </Link>
             </NavItem>
             <NavItem
               className="nav-item link-resources"
-              hrefs={['/policies', '/photo-policy', '/studios']}
+              hrefs={['/resume.pdf']}
             >
               <span className="category resources-category">
                 Resources
