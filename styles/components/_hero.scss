@@ -79,7 +79,7 @@
     @include breakpoint('lg') {
       display: block;
       right: 5%;
-      top: 65%;
+      top: 60%;
       transform: translate(-0%, -0%);
     }
   }
@@ -96,6 +96,6 @@
 
   @include breakpoint('lg') {
     height: 90vh;
-    margin-bottom: $gutter * 3;
+    margin-bottom: $gutter * 2;
   }
 }

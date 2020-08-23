@@ -81,18 +81,24 @@ h3,
 h1,
 .h1 {
   margin-top: 0;
-  font-size: rem(54);
+  font-size: rem(56);
 }
 
 h2,
 .h2 {
-  font-size: rem(32);
+  font-size: rem(44);
+  margin-top: 0;
 }
 
 h3,
 .h3 {
-  font-size: rem(18);
-  margin-top: rem(20);
+  font-size: rem(32);
+  margin-top: 0;
+}
+
+p {
+  font-size: rem(20);
+  margin-top: 0;
 }
 
 ul {

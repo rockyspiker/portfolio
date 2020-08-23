@@ -37,9 +37,9 @@ const Header = () => {
         <nav>
           <span className="category main-category">Main</span>
           <ul className="main-nav">
-            <NavItem className="nav-item link-home" hrefs={['/']}>
+            <NavItem className="nav-item link-about" hrefs={['/']}>
               <Link href="/">
-                <a>Home</a>
+                <a>About</a>
               </Link>
             </NavItem>
             <NavItem className="nav-item link-my-work" hrefs={['/my-work']}>

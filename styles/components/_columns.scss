@@ -1,0 +1,33 @@
+.columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .item {
+    margin: auto auto $gutter auto;
+    text-align: center;
+    width: 100%;
+
+    .icon {
+      color: $brand-primary-dark;
+      height: 48px;
+      margin: $gutter;
+      width: 48px;
+    }
+
+    @include breakpoint('md') {
+      padding: 0 $gutter;
+      margin: 0 auto $gutter auto;
+      width: 50%;
+    }
+
+    @include breakpoint('lg') {
+      width: 33.3%;
+    }
+  }
+
+  @include breakpoint('md') {
+    margin: 0 (-$gutter);
+    margin-top: $gutter;
+  }
+}

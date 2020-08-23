@@ -236,7 +236,7 @@ body.has-active-header {
         }
       }
 
-      &.link-home span {
+      &.link-about span {
         @include breakpoint($nav-breakpoint) {
           display: none;
         }
