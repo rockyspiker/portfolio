@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: auto auto $gutter/2 auto;
 
   .item {
-    margin: auto auto $gutter auto;
-    text-align: center;
     width: 100%;
+    margin: auto auto $gutter/2 auto;
 
     .icon {
       color: $brand-primary-dark;

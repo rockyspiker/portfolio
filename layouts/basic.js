@@ -1,4 +1,5 @@
 import App from './base'
+import Footer from '../components/footer'
 import Header from '../components/header'
 import Hero from '../components/hero'
 
@@ -10,6 +11,7 @@ const Basic = (props) => {
       <div className="container" {...props}>
         {props.children}
       </div>
+      <Footer />
     </App>
   )
 }

@@ -20,7 +20,11 @@ body {
   font-weight: $font-weight-normal;
   line-height: $line-height-base;
   margin: 0;
-  text-align: left;
+  text-align: center;
+
+  @include breakpoint('md') {
+    text-align: left;
+  }
 }
 
 [tabindex='-1']:focus:not(:focus-visible) {

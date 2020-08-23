@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import Button from './button'
 import Hamburger from './hamburger'
 import Chevron from './icons/chevron'
 import Logo from './icons/logo-rocky'

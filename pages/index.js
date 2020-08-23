@@ -12,10 +12,11 @@ const Home = () => {
         <title>About</title>
       </Head>
       <h1>Who Am I?</h1>
+      <h3>Developer, Designer, Team-Player</h3>
       <Columns>
         <div className="item">
           <Monitor />
-          <h3>Professional</h3>
+          <h2>Professional</h2>
           <p>
             I started working as an independent web developer, taking a few
             smaller projects when I could. Talent Management Partners offered me
@@ -24,7 +25,7 @@ const Home = () => {
         </div>
         <div className="item">
           <Book />
-          <h3>Education</h3>
+          <h2>Education</h2>
           <p>
             Upon graduating highschool at Lone Peak High, I went to pursue my
             Associate of Arts are Snow College. After receiving my AA, I began
@@ -34,7 +35,7 @@ const Home = () => {
         </div>
         <div className="item">
           <Smile />
-          <h3>Personal</h3>
+          <h2>Personal</h2>
           <p>
             Living in Saratoga Springs, UT, I enjoy all that this beautiful
             state has to offer. I love anything from video games indoors, to
@@ -43,7 +44,7 @@ const Home = () => {
           </p>
         </div>
       </Columns>
-      <h3>Blah blah</h3>
+      <h2>Blah blah</h2>
     </Layout>
   )
 }
