@@ -11,8 +11,8 @@ const Home = () => {
       <Head>
         <title>About</title>
       </Head>
-      <h1>Who Am I?</h1>
-      <h3>Developer, Designer, Team-Player</h3>
+      <h1>Who Am I? <span className="mini-comment">"I don't know."</span></h1>
+      <h3>A little more about <span className="accent">me</span>.</h3>
       <Columns>
         <div className="item">
           <Monitor />

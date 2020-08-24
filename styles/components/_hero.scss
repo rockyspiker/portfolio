@@ -1,101 +1,78 @@
 .hero {
-  background-image: url('/CodePicture.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/Laptop.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
-  margin-bottom: 250px + ($gutter * 2);
+  margin-bottom: ($gutter * 2);
   position: relative;
   width: 100%;
 
   .hero-content {
-    left: 50%;
-    position: absolute;
-    text-align: center;
+    color: $white;
+    margin: 0 (-$gutter);
+    padding-top: 10vh;
+    position: relative;
     top: 50%;
 
-    h1 {
-      color: $brand-primary;
-      font-size: 2rem;
+    @include breakpoint('sm') {
+      padding-top: 15vh;
+    }
+
+    @include breakpoint('md') {
       margin: 0;
-
-      @include breakpoint('sm') {
-        font-size: 3rem;
-      }
-    }
-
-    p {
-      @include breakpoint('sm') {
-        font-size: 1rem;
-      }
-    }
-
-    .hero-button {
-      background-color: $brand-primary;
-      border: none;
-      border-radius: 20px;
-      color: $brand-primary;
-      cursor: pointer;
-      font-size: 1rem;
-      outline: none;
-      padding: 10px 25px;
-      text-align: center;
-      transition: background-color 0.5s;
-
-      &:hover {
-        background-color: $brand-primary-dark;
-      }
+      position: absolute;
+      top: 50%;
+      transform: translate(0%, -50%);
     }
   }
 
-  .hero-portrait {
-    position: absolute;
-    text-align: center;
-    top: calc(100% + 32px);
-    left: 50%;
-    transform: translate(-50%, -0%);
+  // .hero-portrait {
+  //   position: absolute;
+  //   text-align: center;
+  //   top: calc(100% + 32px);
+  //   left: 50%;
+  //   transform: translate(-50%, -0%);
 
-    img {
-      border-radius: 50%;
-      width: 250px;
-      height: 250px;
+  //   img {
+  //     border-radius: 50%;
+  //     width: 250px;
+  //     height: 250px;
 
-      @include breakpoint('sm') {
-        width: 300px;
-        height: 300px;
-      }
+  //     @include breakpoint('sm') {
+  //       width: 300px;
+  //       height: 300px;
+  //     }
 
-      @include breakpoint('md') {
-        width: 350px;
-        height: 350px;
-      }
+  //     @include breakpoint('md') {
+  //       width: 350px;
+  //       height: 350px;
+  //     }
 
-      @include breakpoint('lg') {
-        width: 400px;
-        height: 400px;
-      }
-    }
+  //     @include breakpoint('lg') {
+  //       width: 400px;
+  //       height: 400px;
+  //     }
+  //   }
 
-    @include breakpoint('lg') {
-      display: block;
-      right: 5%;
-      top: 60%;
-      transform: translate(-0%, -0%);
-    }
-  }
+  //   @include breakpoint('lg') {
+  //     display: block;
+  //     right: 5%;
+  //     top: 60%;
+  //     transform: translate(-0%, -0%);
+  //   }
+  // }
 
   @include breakpoint('sm') {
     height: 60vh;
-    margin-bottom: 300px + ($gutter * 2);
   }
 
   @include breakpoint('md') {
     height: 75vh;
-    margin-bottom: 350px + ($gutter * 2);
   }
 
   @include breakpoint('lg') {
     height: 90vh;
-    margin-bottom: $gutter * 2;
   }
 }

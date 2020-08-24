@@ -7,7 +7,10 @@ const Basic = (props) => {
   return (
     <App>
       <Header />
-      <Hero></Hero>
+      <Hero>
+        <h1>Rocky Spiker</h1>
+        <h3>Designer, <span className="accent">Developer</span>, Team-Player</h3>
+      </Hero>
       <div className="container" {...props}>
         {props.children}
       </div>
