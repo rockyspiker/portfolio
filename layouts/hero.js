@@ -1,15 +1,15 @@
 import App from './base'
 import Footer from '../components/footer'
 import Header from '../components/header'
-import PageHeading from '../components/page-heading'
+import Hero from '../components/hero'
 
-const Basic = ({ children, Heading, ...props }) => {
+const Basic = (props) => {
   return (
     <App>
       <Header />
-      <PageHeading>{Heading}</PageHeading>
+      <Hero></Hero>
       <div className="container" {...props}>
-        {children}
+        {props.children}
       </div>
       <Footer />
     </App>

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: auto auto $gutter/2 auto;
+  margin: auto auto $gutter*2 auto;
 
   .item {
     width: 100%;
@@ -11,7 +11,7 @@
     .icon {
       color: $brand-primary-dark;
       height: 48px;
-      margin: $gutter;
+      margin: $gutter/2;
       width: 48px;
     }
 
@@ -27,7 +27,6 @@
   }
 
   @include breakpoint('md') {
-    margin: 0 (-$gutter);
-    margin-top: $gutter;
+    margin: $gutter (-$gutter) $gutter;
   }
 }

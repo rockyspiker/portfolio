@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Layout from '../layouts/basic'
+import Layout from '../layouts/hero'
 import Book from '../components/icons/book-open'
 import Monitor from '../components/icons/monitor'
 import Smile from '../components/icons/smile'
@@ -20,31 +20,31 @@ const Home = () => {
           <p>
             I started working as an independent web developer, taking a few
             smaller projects when I could. Talent Management Partners offered me
-            a position as a Full Stack Developer and have worked there since.
+            a position as a Full Stack Developer and have worked there since
+            January of 2019.
           </p>
         </div>
         <div className="item">
           <Book />
           <h2>Education</h2>
           <p>
-            Upon graduating highschool at Lone Peak High, I went to pursue my
-            Associate of Arts are Snow College. After receiving my AA, I began
-            working toward my Bachelor in Computer Science with an emphasis in
-            Full Stack Web Development.
+            After graduating from Lone Peak High School and receiving my
+            Associate of Arts from Snow College, I went on to pursue my Bachelor
+            in Computer Science at Utah Valley University and will soon
+            graduate.
           </p>
         </div>
         <div className="item">
           <Smile />
           <h2>Personal</h2>
           <p>
-            Living in Saratoga Springs, UT, I enjoy all that this beautiful
-            state has to offer. I love anything from video games indoors, to
-            exploring the wonderful wilderness. Getting to know people is a
-            passion of mine so feel free to contact me!
+            Being a Utah based Software Engineer, I always look forward to new
+            challenges and opportunities around me. I am always eager to take on
+            new projects so feel free to contact me for whatever developing need
+            you may have.
           </p>
         </div>
       </Columns>
-      <h2>Blah blah</h2>
     </Layout>
   )
 }

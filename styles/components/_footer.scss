@@ -31,10 +31,6 @@
 
       .footer-content-links {
         text-align: right;
-
-        @include breakpoint('lg') {
-          text-align: left;
-        }
       }
 
       @include breakpoint('sm') {

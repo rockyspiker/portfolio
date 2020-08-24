@@ -1,0 +1,11 @@
+.page-heading {
+  background-color: $gray-light;
+  padding: $gutter*2 0;
+  margin-bottom: $gutter*2;
+
+  .content {
+    h1 {
+      margin: 0;
+    }
+  }
+}
