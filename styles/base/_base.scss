@@ -33,13 +33,13 @@ body {
 
 a {
   background-color: transparent;
-  color: darken($brand-primary, 5%);
+  color: $brand-primary;
   font-size: inherit;
   text-decoration: none;
   transition: color $hover-transition;
 
   &:hover {
-    color: hover-color($brand-primary-dark);
+    color: $brand-primary-dark;
   }
 
   &:not([href]) {

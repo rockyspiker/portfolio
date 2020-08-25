@@ -1,0 +1,88 @@
+.website {
+  padding: $gutter * 2 0;
+
+  .web-col {
+    display: inline-block;
+    margin-bottom: $gutter;
+    width: 100%;
+    vertical-align: top;
+
+    &.website-description {
+      @include breakpoint('md') {
+        width: 36%;
+      }
+    }
+
+    &.website-thumb {
+      background-size: cover;
+      height: 150px;
+      text-align: center;
+
+      .button {
+        border: solid 1px $color-base;
+        opacity: 0;
+        position: relative;
+        top: 60%;
+        transition: opacity $hover-transition, transform $hover-transition,
+          background-color $hover-transition;
+      }
+
+      &:hover {
+        .button {
+          opacity: 1;
+          transform: translate(0, -100%);
+        }
+      }
+
+      @include breakpoint('sm') {
+        height: 250px;
+      }
+
+      @include breakpoint('md') {
+        width: 60%;
+      }
+
+      @include breakpoint('lg') {
+        height: 300px;
+      }
+    }
+  }
+
+  &.teletalkers {
+    .website-thumb {
+      background-image: url('/TeleTalkers.jpg');
+
+      .button {
+        background: #ff524b;
+
+        &:hover {
+          background: darken(#ff524b, 7%);
+        }
+      }
+
+      @include breakpoint('md') {
+        margin: 0 0 0 4%;
+      }
+    }
+  }
+
+  &.jp-life {
+    background: $gray-light;
+
+    .website-thumb {
+      background-image: url('/JPLifeCoach.jpg');
+
+      .button {
+        background: #526271;
+
+        &:hover {
+          background: darken(#526271, 7%);
+        }
+      }
+
+      @include breakpoint('md') {
+        margin: 0 4% 0 0;
+      }
+    }
+  }
+}

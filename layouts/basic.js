@@ -8,7 +8,7 @@ const Basic = ({ children, Heading, ...props }) => {
     <App>
       <Header />
       <PageHeading>{Heading}</PageHeading>
-      <div className="container" {...props}>
+      <div {...props}>
         {children}
       </div>
       <Footer />
