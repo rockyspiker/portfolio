@@ -4,12 +4,16 @@ const Form = ({ className, ...props }) => {
   return (
     <div className="container">
       <div className={`form-container ${className}`} {...props}>
-        <form action="mailto:rockyspiker.contact@gmail.com">
+        <form
+          action="https://formspree.io/rockyspiker.contact@gmail.com"
+          method="POST"
+        >
           <div className="info">
             <InputBlock label="Name" name="name" type="text" required />
             <InputBlock label="Email" name="mail" type="mail" required />
             <InputBlock label="Company" name="company" type="text" />
             <InputBlock label="Phone" name="phone" type="tel" />
+            <input type="hidden" name="_next" value="/contact" />
           </div>
           <TextBlock label="Message" name="message" required />
           <div className="submit-container">
