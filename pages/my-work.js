@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const MyWork = () => {
   return (
-    <Layout Heading="My Work">
+    <Layout heading="My Work">
       <Head>
         <title>My Work</title>
       </Head>

@@ -29,7 +29,7 @@
     font-weight: $font-weight-medium;
 
     &:hover {
-      background-color: hover-color($brand-primary);
+      background-color: $brand-primary-dark;
       text-decoration: none;
     }
   }

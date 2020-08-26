@@ -3,11 +3,11 @@ import Footer from '../components/footer'
 import Header from '../components/header'
 import PageHeading from '../components/page-heading'
 
-const Basic = ({ children, Heading, ...props }) => {
+const Basic = ({ children, heading, ...props }) => {
   return (
     <App>
       <Header />
-      <PageHeading>{Heading}</PageHeading>
+      <PageHeading>{heading}</PageHeading>
       <div {...props}>
         {children}
       </div>
