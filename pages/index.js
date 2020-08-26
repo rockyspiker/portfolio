@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Layout from '../layouts/hero'
 import Book from '../components/icons/book-open'
 import Monitor from '../components/icons/monitor'
@@ -11,8 +12,10 @@ const Home = () => {
       <Head>
         <title>About</title>
       </Head>
-      <h1>Who Am I? <span className="mini-comment">"I don't know."</span></h1>
-      <h3>A little more about <span className="accent">me</span>.</h3>
+      <h1>Who Am I?</h1>
+      <h3>
+        A little more about <span className="accent">me</span>.
+      </h3>
       <Columns>
         <div className="item">
           <Monitor />
@@ -20,7 +23,7 @@ const Home = () => {
           <p>
             I started working as an independent web developer, taking a few
             smaller projects when I could. Talent Management Partners offered me
-            a position as a Full Stack Developer and have worked there since
+            a position as a Full Stack Developer and I have worked there since
             January of 2019.
           </p>
         </div>
@@ -30,8 +33,8 @@ const Home = () => {
           <p>
             After graduating from Lone Peak High School and receiving my
             Associate of Arts from Snow College, I went on to pursue my Bachelor
-            in Computer Science at Utah Valley University and will soon
-            graduate.
+            in Computer Science at Utah Valley University and will graduate
+            Spring of 2021.
           </p>
         </div>
         <div className="item">
@@ -40,8 +43,8 @@ const Home = () => {
           <p>
             Being a Utah based Software Engineer, I always look forward to new
             challenges and opportunities around me. I am always eager to take on
-            new projects so feel free to contact me for whatever developing need
-            you may have.
+            new projects so feel free to <Link href="/contact"><a>contact me</a></Link> for whatever developing
+            needs you may have.
           </p>
         </div>
       </Columns>

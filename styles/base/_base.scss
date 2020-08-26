@@ -35,7 +35,7 @@ a {
   background-color: transparent;
   color: $brand-primary;
   font-size: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
   transition: color $hover-transition;
 
   &:hover {

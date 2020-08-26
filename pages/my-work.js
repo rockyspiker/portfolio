@@ -17,7 +17,7 @@ const MyWork = () => {
       >
         <h2>TeleTalkers</h2>
         <p>
-          A current small side project that has been a lot of fun to work on and
+          A current side project that has been a lot of fun to work on and
           experiment with new frameworks and libraries.
         </p>
       </Website>
@@ -30,8 +30,8 @@ const MyWork = () => {
         <h2>JP Life Coach</h2>
         <p>
           James Pemberton Life Coaching was one of my first projects and helped
-          me grow a lot. This project made me realize what to do as well as what
-          not to do.
+          me grow a lot. I gained a lot of valuable knowledge from this
+          experience.
         </p>
       </Website>
       <Section>
