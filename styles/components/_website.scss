@@ -40,10 +40,12 @@
 
       @include breakpoint('md') {
         width: 60%;
+        margin: 0 0 0 24px;
       }
 
       @include breakpoint('lg') {
         height: 300px;
+        margin: 0 0 0 36px;
       }
     }
   }
@@ -58,10 +60,6 @@
         &:hover {
           background: darken(#ff524b, 7%);
         }
-      }
-
-      @include breakpoint('md') {
-        margin: 0 0 0 4%;
       }
     }
   }
@@ -78,10 +76,6 @@
         &:hover {
           background: darken(#526271, 7%);
         }
-      }
-
-      @include breakpoint('md') {
-        margin: 0 4% 0 0;
       }
     }
   }

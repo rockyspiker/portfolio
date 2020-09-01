@@ -9,9 +9,11 @@ const Basic = (props) => {
       <Header />
       <Hero>
         <h1>Rocky Spiker</h1>
-        <h3>Designer, <span className="accent">Developer</span>, Team-Player</h3>
+        <h3>
+          Planner, <span className="accent">Developer</span>, Team-Player
+        </h3>
       </Hero>
-      <div className="container" {...props}>
+      <div className="container" id="main" {...props}>
         {props.children}
       </div>
       <Footer />

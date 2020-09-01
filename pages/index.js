@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Layout from '../layouts/hero'
 import Book from '../components/icons/book-open'
 import Monitor from '../components/icons/monitor'
-import Smile from '../components/icons/smile'
+import User from '../components/icons/user'
 import Columns from '../components/columns'
 
 const Home = () => {
@@ -31,20 +31,20 @@ const Home = () => {
           <Book />
           <h2>Education</h2>
           <p>
-            After graduating from Lone Peak High School and receiving my
-            Associate of Arts from Snow College, I went on to pursue my Bachelor
-            in Computer Science at Utah Valley University and will graduate
+            After receiving my Associate of Arts from Snow College, I went on to
+            pursue my Bachelor in Computer Science at Utah Valley University.
+            Nearing the end of my degree, my expected graduation date will be in
             Spring of 2021.
           </p>
         </div>
         <div className="item">
-          <Smile />
+          <User />
           <h2>Personal</h2>
           <p>
-            Being a Utah based Software Engineer, I always look forward to new
-            challenges and opportunities around me. I am always eager to take on
-            new projects so feel free to <Link href="/contact"><a>contact me</a></Link> for whatever developing
-            needs you may have.
+            California born and Utah raised, I have enjoyed all that Utah has to
+            offer. Currently living in Saratoga Springs, my wife and I enjoy all
+            sorts of recreation from pickleball to hiking, and occasionally even
+            axe throwing.
           </p>
         </div>
       </Columns>

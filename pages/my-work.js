@@ -25,7 +25,6 @@ const MyWork = () => {
         className="jp-life"
         href="https://jamespembertonlifecoach.com/"
         title="JP Life Coach"
-        left
       >
         <h2>JP Life Coach</h2>
         <p>
