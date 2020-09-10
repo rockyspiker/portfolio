@@ -4,39 +4,32 @@ import Chevron from './icons/chevron'
 const Form = ({ className, ...props }) => {
   useEffect(() => {
     let form = document.getElementById('contact-me')
-    let button = document.getElementById('contact-me-submit')
     let status = document.getElementById('contact-me-status')
 
-    function success() {
-      form.reset()
-      status.innerHTML = '<p>The form was submitted!</p>'
+    let showStatus = (stat) => {
+      if (stat) {
+        form.reset()
+        status.innerHTML = '<p>The form was submitted!</p>'
+      } else status.innerHTML = '<p>Oops! There was a problem.</p>'
     }
 
-    function error() {
-      status.innerHTML = '<p>Oops! There was a problem.</p>'
+    let ajax = (method, url, data) => {
+      let xhr = new XMLHttpRequest()
+      xhr.open(method, url)
+      xhr.setRequestHeader('Accept', 'application/json')
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return
+        showStatus(xhr.status === 200)
+      }
+      xhr.send(data)
     }
 
     form.addEventListener('submit', function (e) {
       e.preventDefault()
       let data = new FormData(form)
-      ajax(form.method, form.action, data, success, error)
+      ajax(form.method, form.action, data)
     })
   }, [])
-
-  function ajax(method, url, data, success, error) {
-    let xhr = new XMLHttpRequest()
-    xhr.open(method, url)
-    xhr.setRequestHeader('Accept', 'application/json')
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return
-      if (xhr.status === 200) {
-        success(xhr.response, xhr.responseType)
-      } else {
-        error(xhr.status, xhr.response, xhr.responseType)
-      }
-    }
-    xhr.send(data)
-  }
 
   return (
     <div className="container">
