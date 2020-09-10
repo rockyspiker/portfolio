@@ -4,7 +4,6 @@ import Chevron from './icons/chevron'
 const Form = ({ className, ...props }) => {
   useEffect(() => {
     let form = document.getElementById('contact-me')
-    let button = document.getElementById('contact-me-submit')
     let status = document.getElementById('contact-me-status')
 
     let success = () => {
