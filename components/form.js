@@ -7,12 +7,12 @@ const Form = ({ className, ...props }) => {
     let button = document.getElementById('contact-me-submit')
     let status = document.getElementById('contact-me-status')
 
-    function success() {
+    let success = () => {
       form.reset()
       status.innerHTML = '<p>The form was submitted!</p>'
     }
 
-    function error() {
+    let error = () => {
       status.innerHTML = '<p>Oops! There was a problem.</p>'
     }
 
@@ -23,7 +23,7 @@ const Form = ({ className, ...props }) => {
     })
   }, [])
 
-  function ajax(method, url, data, success, error) {
+  let ajax = (method, url, data, success, error) => {
     let xhr = new XMLHttpRequest()
     xhr.open(method, url)
     xhr.setRequestHeader('Accept', 'application/json')
