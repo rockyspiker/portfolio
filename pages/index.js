@@ -22,9 +22,10 @@ const Home = () => {
           <h2>Professional</h2>
           <p>
             I started working as an independent web developer, taking a few
-            smaller projects when I could. Talent Management Partners offered me
-            a position as a Full Stack Developer and I have worked there since
-            January of 2019.
+            smaller projects when I could. Picking up my first position as 
+            a Full Stack Developer in January of 2019, I have continued to 
+            grow my skills, most recently at Hoodoo Digital as an AEM Engineer 
+            Intern since October of 2020.
           </p>
         </div>
         <div className="item">
