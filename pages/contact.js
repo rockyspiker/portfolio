@@ -1,12 +1,50 @@
 import Layout from '../layouts/basic'
-import Form from '../components/form'
 
 const Contact = () => {
-  return (
-    <Layout heading="Contact Me">
-      <Form />
-    </Layout>
-  )
+  return <Layout>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+  </Layout>
 }
 
 export default Contact

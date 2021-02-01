@@ -1,7 +1,7 @@
 const Section = ({ children, ...props }) => {
   return (
-    <div className="section">
-      <div className="container" {...props}>
+    <div className={"section " + props.className}>
+      <div className="container">
         {children}
       </div>
     </div>

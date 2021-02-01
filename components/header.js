@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import Hamburger from './hamburger'
-import Chevron from './icons/chevron'
-import Logo from './icons/logo-rocky'
+import Hamburger from './icons/hamburger'
 
 const Header = () => {
   const [activeMenu, setActiveMenu] = useState(false)
@@ -13,6 +11,14 @@ const Header = () => {
       ? body.classList.add('has-active-header')
       : body.classList.remove('has-active-header')
   }, [activeMenu])
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        document.querySelector('.header').classList.add('not-top')
+      } else document.querySelector('.header').classList.remove('not-top')
+    })
+  })
 
   return (
     <div className={`header ${activeMenu ? 'is-active' : ''}`}>
@@ -28,45 +34,22 @@ const Header = () => {
         </button>
 
         <Link href="/">
-          <a>
-            <Logo />
+          <a className="link-logo">
+            <img className="icon-logo" src="logo.jpg"></img>
           </a>
         </Link>
 
         <nav>
-          <span className="category main-category">Main</span>
+          <span className="category main-category">Navigation</span>
           <ul className="main-nav">
             <NavItem className="nav-item link-about" hrefs={['/']}>
               <Link href="/">
-                <a>About</a>
+                <a>Home</a>
               </Link>
-            </NavItem>
-            <NavItem className="nav-item link-my-work" hrefs={['/my-work']}>
-              <Link href="/my-work">
-                <a>My Work</a>
-              </Link>
-            </NavItem>
-            <NavItem
-              className="nav-item link-resources"
-              hrefs={['/resume.pdf']}
-            >
-              <span className="category resources-category">
-                Resources
-                <Chevron />
-              </span>
-              <ul className="sub-nav">
-                <li>
-                  <Link href="/resume.pdf">
-                    <a target="_blank" rel="noopener noreferrer">
-                      Resume
-                    </a>
-                  </Link>
-                </li>
-              </ul>
             </NavItem>
             <NavItem className="nav-item link-contact" hrefs={['/contact']}>
               <Link href="/contact">
-                <a>Contact Me</a>
+                <a>Contact</a>
               </Link>
             </NavItem>
           </ul>

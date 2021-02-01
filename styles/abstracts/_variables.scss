@@ -7,10 +7,12 @@ $white: #fff;
 $gray-dark: #444;
 $gray: #888;
 $gray-light: #eee;
+$off-white: #f3f3f3;
 
 $brand-black: #222;
-$brand-primary: #5694f0;
-$brand-primary-dark: darken($brand-primary, 7%);
+$brand-primary-light: #8ebae3;
+$brand-primary: #4e8ece;
+$brand-primary-dark: #4a67aa;
 
 $color-base: $brand-black;
 $color-heading: $brand-black;
@@ -21,8 +23,8 @@ $background-accent: $brand-primary;
 //
 //
 // Typography
-$font-family-regular: 'Mukta', sans-serif;
-$font-family-heading: 'Mukta', sans-serif;
+$font-family-regular: 'Quicksand', sans-serif;
+$font-family-heading: 'Quicksand', sans-serif;
 
 $font-size-base: 1rem;
 $font-size-lead: rem(22);
@@ -54,7 +56,7 @@ $breakpoint-xl: 1200px;
 //
 //
 // Container / Grid
-$container-width: 1140px;
+$container-width: 1280px;
 $bg-dark: $brand-black;
 $bg-light: $gray-light;
 

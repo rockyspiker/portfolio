@@ -8,10 +8,10 @@ body.has-active-header {
 
 .header {
   background-color: $white;
-  border-bottom: 1px solid $gray-light;
   color: $color-heading;
   position: sticky;
   top: 0;
+  transition: box-shadow 0.3s;
   z-index: $z-index-nav;
   width: 100%;
 
@@ -23,6 +23,10 @@ body.has-active-header {
       left: 0;
       opacity: 1;
     }
+  }
+
+  &.not-top {
+    box-shadow: 0 4px 8px 0 rgba($black, 0.2);
   }
 
   .container {
@@ -47,7 +51,7 @@ body.has-active-header {
       }
     }
 
-    svg {
+    img {
       height: 45px;
       width: auto;
 
@@ -73,22 +77,16 @@ body.has-active-header {
     }
   }
 
-  .icon-logo-rocky {
-    cursor: pointer;
+  .link-logo {
     display: none;
+
+    .icon-logo {
+      margin: rem(15) 0;
+      max-height: rem(40);
+    }
 
     @include breakpoint($nav-breakpoint) {
       display: block;
-
-      .logo-x {
-        transition: fill $hover-transition;
-      }
-
-      &:hover {
-        .logo-x {
-          fill: $brand-primary-dark;
-        }
-      }
     }
   }
 
