@@ -34,8 +34,9 @@ const Home = () => {
           <p>
             After receiving my Associate of Arts from Snow College, I went on to
             pursue my Bachelor in Computer Science at Utah Valley University.
-            Nearing the end of my degree, my expected graduation date will be in
-            Spring of 2021.
+            Though I graduated in May of 2021, I still strive to continue my
+            education by maintaining my knowledge of current technologies and
+            standards.
           </p>
         </div>
         <div className="item">
