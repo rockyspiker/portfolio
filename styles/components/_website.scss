@@ -50,6 +50,20 @@
     }
   }
 
+  &.trakpacker {
+    .website-thumb {
+      background-image: url('/TrakPacker.jpg');
+
+      .button {
+        background: #fbbd04;
+
+        &:hover {
+          background: darken(#fbbd04, 7%);
+        }
+      }
+    }
+  }
+
   &.teletalkers {
     .website-thumb {
       background-image: url('/TeleTalkers.jpg');
