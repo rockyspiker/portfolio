@@ -13,7 +13,7 @@ const MyWork = () => {
       <Website
         className="trakpacker"
         href="https://trakpacker.netlify.app/"
-        title="TeleTalkers"
+        title="TrakPacker"
       >
         <h2>TrakPacker</h2>
         <p>
