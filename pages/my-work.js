@@ -11,6 +11,18 @@ const MyWork = () => {
         <title>My Work</title>
       </Head>
       <Website
+        className="trakpacker"
+        href="https://trakpacker.netlify.app/"
+        title="TrakPacker"
+      >
+        <h2>TrakPacker</h2>
+        <p>
+          A senior capstone project of mine in college, this application allows
+          you to store common routes you may use and provides public transportation
+          options available to you.
+        </p>
+      </Website>
+      <Website
         className="teletalkers"
         href="https://teletalkers.netlify.app/"
         title="TeleTalkers"
